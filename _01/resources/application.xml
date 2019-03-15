@@ -13,6 +13,22 @@
 			http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
 			http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
 			http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+	<!-- 配置注解适配器
+	该适配器 使用DefaultAnnotationHandlerMapping来进行映射，该映射器不用配置
+
+	在spring3.1之前使用：
+注解映射器:org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping
+注解适配器:org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter
+
+　　在spring3.1之后使用：
+注解映射器:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping
+注解适配器:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter
+
+我们在日常开发中，也没有显示在spring容器中声明RequestMappingHandlerMapping，RequestMappingHandlerAdapter这两个类啊，这是怎么回事呢？？
+其实这都要依靠在springmvc配置文件中的<mvc:annotation-driven />
+
+	-->
 	<!-- <bean name="/hello"  class="cn.xmg.springmvc.controller.HelloWorldController"></bean>
 	<bean class="cn.xmg.springmvc.controller.AnnotationController"></bean> -->
 	<!-- 开启注解扫描 -->

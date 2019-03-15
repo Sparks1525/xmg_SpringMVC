@@ -11,6 +11,8 @@
     <title>$Title$</title>
   </head>
   <body>
-  $END$
+  hi<br>
+  ${milk}<br>
+  ${user}<br>
   </body>
 </html>
