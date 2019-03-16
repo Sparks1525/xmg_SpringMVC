@@ -8,6 +8,10 @@
   <servlet>
   	<servlet-name>springMVC11</servlet-name>
   	<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+
+	  <!--
+   		如果 SpringMVC xml 不在 /WEB-INF/ <servlet-name>-servlet.xml的话，必须指定xml的路径 param-name名字固定
+      -->
   	<init-param>
   		<param-name>contextConfigLocation</param-name>
   		<param-value>classpath:application.xml</param-value>

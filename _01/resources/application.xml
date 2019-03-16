@@ -35,6 +35,6 @@
 	<context:component-scan base-package="cn.xmg.springmvc.controller"/>
 	<!-- 添加对springmvc支持 -->
 	<mvc:annotation-driven/>
-	<!-- 支持对静态资源的处理 -->
+	<!-- 支持对静态资源的处理 比如访问xxx.html -->
 	<mvc:default-servlet-handler/>
 </beans>
