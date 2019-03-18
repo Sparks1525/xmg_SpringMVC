@@ -3,7 +3,6 @@ package cn.xmg.springmvc.controller;
 import java.io.UnsupportedEncodingException;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.websocket.server.PathParam;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
