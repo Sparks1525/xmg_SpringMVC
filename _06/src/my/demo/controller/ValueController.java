@@ -10,6 +10,10 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import java.io.UnsupportedEncodingException;
 
+/**
+ * 传入值
+ */
+
 @Controller
 public class ValueController {
 
@@ -75,6 +79,7 @@ public class ValueController {
         return mv;
     }
 
+    //地址栏传參  localhost/delete/5
     @RequestMapping("/delete/{id}")
     public ModelAndView value7(@PathVariable("id") Long id){
         System.out.println("delete");

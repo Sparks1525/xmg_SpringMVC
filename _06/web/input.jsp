@@ -122,6 +122,10 @@
 				<td><input type="text" name="name"></td>
 			</tr>
 			<tr>
+				<td>其他</td>
+				<td><input type="text" name="other"></td>
+			</tr>
+			<tr>
 				<td>密码</td>
 				<td><input type="text" name="password"></td>
 			</tr>
