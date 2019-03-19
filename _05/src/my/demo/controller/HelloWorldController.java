@@ -6,6 +6,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 @Controller
 public class HelloWorldController {
@@ -19,7 +20,7 @@ public class HelloWorldController {
     }
 
     @RequestMapping("/test2")
-    public ModelAndView test2(HttpServletRequest request, HttpServletResponse response) throws Exception{
+    public ModelAndView test2(HttpServletResponse response, HttpServletRequest request) throws Exception{
         System.out.println("test2");
         ModelAndView mv = new ModelAndView();
         mv.addObject("key","test22");
@@ -55,21 +56,41 @@ public class HelloWorldController {
     }
 
     @RequestMapping("/test6")
-    public ModelAndView test6() throws Exception{
+    public ModelAndView test7() throws Exception{
         System.out.println("test6");
         ModelAndView mv = new ModelAndView();
         mv.addObject("key","test66");
         mv.setViewName("hello.jsp");
-        return mv;
+        return null;
     }
 
     @RequestMapping("/test7")
-    public ModelAndView test7() throws Exception{
+    public ModelAndView method3(HttpServletResponse response, HttpSession session) throws Exception {
+        System.out.println(session);
         System.out.println("test7");
         ModelAndView mv = new ModelAndView();
-        mv.addObject("key","test77");
+        mv.addObject("key", "test77");
+        mv.setViewName("hello.jsp");
+        return mv;
+    }
+    @RequestMapping("/test8")
+    public ModelAndView method4(HttpServletResponse response,HttpSession session) throws Exception {
+        System.out.println(session);
+        System.out.println("test8");
+        ModelAndView mv = new ModelAndView();
+        mv.addObject("key", "test88");
         mv.setViewName("hello.jsp");
         return null;
+    }
+
+    @RequestMapping("/test9")
+    public ModelAndView method5(HttpSession session) throws Exception {
+        System.out.println(session);
+        System.out.println("test9");
+        ModelAndView mv = new ModelAndView();
+        mv.addObject("key", "test99");
+        mv.setViewName("hello.jsp");
+        return mv;
     }
 
 }
