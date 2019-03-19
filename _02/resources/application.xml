@@ -37,7 +37,7 @@
 	<mvc:interceptors>
 		<mvc:interceptor>
 			<mvc:mapping path="/*"/>
-			<bean class="cn.xmg.springmvc.controller.DemoInteceptor"></bean>
+			<bean class="cn.xmg.springmvc.controller.DemoInteceptor"/>
 		</mvc:interceptor>
 	</mvc:interceptors>
 </beans>
