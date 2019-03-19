@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 @Controller
-public class HelloWorldController {
+public class AnnotationController {
     @RequestMapping("/test1")
     public ModelAndView test1(HttpServletRequest request, HttpServletResponse response) throws Exception{
         System.out.println("test1");
