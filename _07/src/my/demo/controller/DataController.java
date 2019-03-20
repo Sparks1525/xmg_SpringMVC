@@ -132,7 +132,7 @@ public class DataController {
         model.addAttribute("msg5","before model data msg5");
         request.setAttribute("msg5", "after attribute data msg5");
 
-        return "data9";//响应的视图 前缀+返回值+后缀  /WEB-INF/view/data8.jsp
+        return "data9";//响应的视图 前缀+返回值+后缀  /WEB-INF/view/data9.jsp
     }
 
     /**

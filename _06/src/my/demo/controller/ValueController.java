@@ -29,9 +29,9 @@ public class ValueController {
         return mv;
     }
 
-    // 前端传到后端的parameter和顺序必须和value2(xxx,xxx)里的参数一致
+    // 前端传到后端的parameter必须和value2(xxx,xxx)里的参数名称一致,顺序可以调换
     @RequestMapping("/value2")
-    public ModelAndView value2(String userName, String password) {
+    public ModelAndView value2(String password, String userName) {
         System.out.println("ValueController.value2()");
         System.out.println("userName:" + userName + ",password:" + password);
         User u = new User(userName, password);
