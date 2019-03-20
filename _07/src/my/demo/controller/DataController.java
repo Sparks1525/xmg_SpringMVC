@@ -182,11 +182,11 @@ public class DataController {
      * 总结:
      *
      * 若返回ModelAndView对象
-     * 1. mv对象和ModelAndView,model,request有相同标识名称,则相同标识名称取值优先顺序 ModelAndView > model > request
-     * 2.若无相同标识名称  则其他相同标识名称取值优先顺序 ModelAttribute > model > request
+     * 1. mv对象和ModelAndView,model,request有相同标识名称,则相同标识名称取值优先顺序 ModelAndView > @ModelAttribute > model > request
+     * 2.若无相同标识名称  则其他相同标识名称取值优先顺序 @ModelAttribute > model > request
      *
      * 若返回其他对象
-     * 1.则相同标识名称取值优先顺序 ModelAttribute > 数据类型(全小写) > model > request
-     * 2.若ModelAttribute无相同标识名称 则相同标识名称取值优先顺序 数据类型(全小写) > model > request
+     * 1.则相同标识名称取值优先顺序 @ModelAttribute > 数据类型(全小写) > model > request
+     * 2.若@ModelAttribute无相同标识名称 则相同标识名称取值优先顺序 数据类型(全小写) > model > request
      */
 }
