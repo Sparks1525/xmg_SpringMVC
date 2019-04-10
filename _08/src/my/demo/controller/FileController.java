@@ -37,6 +37,8 @@ public class FileController {
     }
 
 
+
+
     @RequestMapping("/upload")
     public String upload(MultipartFile file){
         System.out.println(file.getContentType());//文件类型
